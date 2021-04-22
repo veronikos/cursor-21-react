@@ -1,10 +1,10 @@
 import { PageHeader } from '../../components/page-header'
 
-export const CatalogSportPage = () => {
+export const CatalogPageTemplate = () => {
     return (
       <>
         <PageHeader level='h2'>Sport Goods</PageHeader>
-        <p>Choose your sport preferences</p>
+        <p>This is template text</p>
       </>
     )
   }

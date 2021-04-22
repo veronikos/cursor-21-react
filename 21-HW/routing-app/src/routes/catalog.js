@@ -1,13 +1,13 @@
-import { CatalogGadgetPage } from "../pages/catalog/gadgets";
+import { CatalogGadgetPage } from "../pages/catalog/gadget";
 import { CatalogSportPage } from "../pages/catalog/sport";
 
 export const catalogRoutes = [
     {
-        path: '/catalog/sport',
+        path: '/sport',
         component: CatalogSportPage
     },
     {
-        path: '/catalog/gadgets',
+        path: '/gadget',
         component: CatalogGadgetPage
     }
 ]
