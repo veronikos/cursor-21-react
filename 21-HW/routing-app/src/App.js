@@ -2,10 +2,11 @@ import { Switch } from "react-router-dom";
 import { Navigation } from "./components/navigation";
 import { appRoutes } from "./routes/index";
 import { UserForm } from "./components/user-form";
-
-import "./App.css";
 import React, { useCallback, useReducer } from "react";
 import { Route } from './components/route'
+
+import "./App.css";
+
 
 export const Store = React.createContext();
 
@@ -63,6 +64,29 @@ const useStore = () => {
   };
 };
 
+const links = [
+  {
+    to: "/",
+    label: "Home",
+  },
+  {
+    to: "/about",
+    label: "About",
+  },
+  {
+    to: "/contacts",
+    label: "Contacts",
+  },
+  {
+    to: "/catalog",
+    label: "Products",
+  },
+  {
+    to: "/account",
+    label: "Account",
+  }
+];
+
 function App() {
   const store = useStore();
 
@@ -70,7 +94,7 @@ function App() {
     <Store.Provider value={store}>
       <div className="App">
         <header className="header">
-          <Navigation ></Navigation>
+          <Navigation links={links}></Navigation>
           <UserForm></UserForm>
         </header>
         <main>

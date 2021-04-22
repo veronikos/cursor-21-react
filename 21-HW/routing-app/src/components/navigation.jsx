@@ -1,29 +1,6 @@
 import { Link } from "react-router-dom";
 
-const links = [
-  {
-    to: "/",
-    label: "Home",
-  },
-  {
-    to: "/about",
-    label: "About",
-  },
-  {
-    to: "/contacts",
-    label: "Contacts",
-  },
-  {
-    to: "/account",
-    label: "Account",
-  },
-  {
-    to: "/catalog",
-    label: "Products",
-  }
-];
-
-export const Navigation = () => {
+export const Navigation = ({ links }) => {
   return (
     <nav className='navigation'>
       <ul className='navigation_menu'>

@@ -3,12 +3,11 @@ import { CatalogSportPage } from "../pages/catalog/sport";
 
 export const catalogRoutes = [
     {
-        path: '/sport',
-        exact: true,
+        path: '/catalog/sport',
         component: CatalogSportPage
     },
     {
-        path: '/gadget',
+        path: '/catalog/gadgets',
         component: CatalogGadgetPage
     }
 ]

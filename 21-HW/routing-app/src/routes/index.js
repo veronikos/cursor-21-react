@@ -3,7 +3,7 @@ import { ContactsPage } from "../pages/contacts";
 import { HomePage } from "../pages/home";
 import { AccountPage } from "../pages/account";
 import { NotAllowedPage } from "../pages/restricted";
-import { CatalogPage } from "../pages/catalog/catalog";
+import { CatalogPage } from "../pages/catalog";
 
 export const appRoutes = [
     {
