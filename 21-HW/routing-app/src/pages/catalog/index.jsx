@@ -12,6 +12,14 @@ const links = [
     to: "/catalog/gadget",
     label: "Gadget",
   },
+  {
+    to: "/catalog/media",
+    label: "New Media",
+  },
+  {
+    to: "/catalog/magazines/35",
+    label: "New Magazines",
+  },
 ];
 
 export const CatalogPage = () => {

@@ -1,13 +1,13 @@
-import { CatalogGadgetPage } from "../pages/catalog/gadget";
-import { CatalogSportPage } from "../pages/catalog/sport";
+import { CatalogPageTemplate } from "../pages/catalog/template";
 
 export const catalogRoutes = [
     {
-        path: '/sport',
-        component: CatalogSportPage
+        path: '/:category',
+        exact: true,
+        component: CatalogPageTemplate
     },
     {
-        path: '/gadget',
-        component: CatalogGadgetPage
+        path: '/:category/:productId',
+        component: CatalogPageTemplate
     }
 ]
