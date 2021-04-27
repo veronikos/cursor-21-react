@@ -1,4 +1,5 @@
 import "./App.css";
+import Button from "./components/Button/Button";
 import PrimaryButton from "./components/PrimaryButton";
 import SecondaryButton from "./components/SecondaryButton/SecondaryButton";
 
@@ -12,6 +13,11 @@ function App() {
           <div className="App_buttonsRow">
             <PrimaryButton />
             <SecondaryButton />
+          </div>
+          <div>
+            <Button>Default</Button>
+            <Button variant="primary">Primary</Button>
+            <Button variant="secondary">Secondary</Button>
           </div>
         </div>
       </header>
