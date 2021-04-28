@@ -14,33 +14,25 @@
 }
 
 .App-header {
-  /* background-color: #282c34; */
-  min-height: 100vh;
+  background-color: #282c34;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
   font-size: calc(10px + 2vmin);
-  color: #282c34;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  color: #235ed4;
 }
 
 .App_buttons {
   margin: 32px;
   display: flex;
   flex-direction: column;
+  max-width: auto;
 }
 
 .App_buttonsRow {
   margin: 16px;
   display: flex;
   gap: 16px;
+  align-items: center;
+  justify-content: center;
 }

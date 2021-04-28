@@ -1,0 +1,98 @@
+:root {
+    --main-color: #23ae77
+}
+
+.avatar_holder_flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+ }
+
+.avatar_holder {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f48fb2;    
+    width: 30px;
+    height: 30px;    
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar {
+    width: 30px;
+    height: 30px;
+} 
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background:#000;
+    margin: 0 auto 0 auto;  
+    width:100%; 
+    text-align:center;
+    margin: 20px 0px 20px 0px;   
+  }
+  
+  p, label{
+    font-size:0.8em;
+    text-decoration: none;
+    color:#fff;
+  }
+  
+  h1{
+    font-size:1.5em;
+    color:#fff;
+  }
+  
+  .box{
+    background:#000;
+    width:300px;
+    border-radius:6px;
+    margin: 10px auto 20px auto;
+    padding:20px;
+    text-align: center;
+    border: #90caf9 2px solid;
+  }
+
+  .checkbox {
+      text-align: left;
+      margin: 20px 0 10px 15px;
+      display: flex;
+      align-items: center;
+      gap: 5px
+  }
+  
+  .input{
+    border: rgb(161, 160, 160) 0.5px solid;
+    padding: 15px;
+    width:250px;
+    color:#AAAAAA;
+    margin:10px;
+    font-size:0.8em;
+    border-radius:4px;
+    background-color: black;
+  }
+  
+  .button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: #000;
+    background:#90caf9;
+    border: 2px solid #90caf9;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    border-radius:4px;
+    width:260px;
+}
+
+.button:hover {
+    background-color: #2e93e6;
+    box-shadow: 0px 15px 20px rgba(46,147,230, 0.4);
+    color: #fff;
+}
