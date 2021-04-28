@@ -2,17 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   display: flex;
@@ -22,17 +11,12 @@
   color: #235ed4;
 }
 
-.App_buttons {
-  margin: 32px;
-  display: flex;
-  flex-direction: column;
-  max-width: auto;
+li {
+  display: inline-block;
+  list-style: none;
+  padding: 10px;
 }
 
-.App_buttonsRow {
-  margin: 16px;
-  display: flex;
-  gap: 16px;
-  align-items: center;
-  justify-content: center;
+ul {
+  padding: 0;
 }

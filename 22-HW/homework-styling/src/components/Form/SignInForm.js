@@ -10,7 +10,7 @@ import {
 } from "./Form.module.css";
 import padlock from './padlock.png';
 
-const Form = () => {
+const SignInForm = () => {
   return (
     <form method="post">
       <div className={classNames(box)}>
@@ -47,4 +47,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default SignInForm;
