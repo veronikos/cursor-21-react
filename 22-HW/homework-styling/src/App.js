@@ -1,7 +1,7 @@
 import "./App.css";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
-import React from "react";
+import React, { useState } from "react";
 import {
   BrowserRouter as Router,
   Switch,
@@ -11,6 +11,8 @@ import {
 import NoPathFound from "./pages/404";
 
 export default function App() {
+  // const [value, setValue] = useState("")
+
   return (
     <Router>
       <div>

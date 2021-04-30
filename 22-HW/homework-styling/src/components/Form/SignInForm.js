@@ -10,6 +10,7 @@ import {
 } from "./Form.module.css";
 import padlock from "./padlock.png";
 import React, { Component } from "react";
+import { userInfo } from './SignUpForm'
 
 class SignInForm extends Component {
   state = {
@@ -23,13 +24,14 @@ class SignInForm extends Component {
     const value = input.type === "checkbox" ? input.checked : input.value;
 
     this.setState({ [input.name]: value })
-    console.log(this.state)
   };
 
   handleFormSubmit = () => {
-    const { email, rememberMe } = this.state;
+    const { email, rememberMe, password } = this.state;
     localStorage.setItem("rememberMe", rememberMe);
     localStorage.setItem("email", rememberMe ? email : "");
+    localStorage.setItem("password", rememberMe ? password : "");
+    console.log(this.state)
   };
 
   componentDidMount() {
@@ -40,7 +42,7 @@ class SignInForm extends Component {
 
   render() {
     return (
-      <form method="post">
+      <form>
         <div className={classNames(box)}>
           <div className={classNames(avatar_holder_flex)}>
             <div className={classNames(avatar_holder)}>
@@ -63,7 +65,6 @@ class SignInForm extends Component {
             value={this.state.password}
             onChange={this.handleChange}
             placeholder="Password"
-            onblur="field_blur(this, 'email');"
             className={classNames(input)}
           />
           <div className={classNames(checkbox)}>
@@ -76,7 +77,7 @@ class SignInForm extends Component {
             />
             <label htmlFor="rememberMe">Remember me</label>
           </div>
-          <button className={classNames(button)} type="submit">
+          <button className={classNames(button)} type="submit" onClick={this.handleFormSubmit}>
             Sign In
           </button>
           <p>
